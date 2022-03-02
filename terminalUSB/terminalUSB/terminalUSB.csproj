@@ -7,6 +7,7 @@
   </PropertyGroup>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Models\" />
@@ -14,6 +15,8 @@
     <Folder Include="Services\" />
   </ItemGroup>
 
+=======
+>>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
 =======
 >>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
 </Project>

@@ -3,7 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:terminalUSB"
 <<<<<<< HEAD
+<<<<<<< HEAD
              StartupUri="Views/Windows/MainWindow.xaml">
+=======
+             StartupUri="MainWindow.xaml">
+>>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
 =======
              StartupUri="MainWindow.xaml">
 >>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5

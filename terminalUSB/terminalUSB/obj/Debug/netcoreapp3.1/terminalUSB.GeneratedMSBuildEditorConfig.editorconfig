@@ -1,7 +1,11 @@
 is_global = true
 build_property.RootNamespace = terminalUSB
 <<<<<<< HEAD
+<<<<<<< HEAD
 build_property.ProjectDir = B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\
+=======
+build_property.ProjectDir = C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\
+>>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
 =======
 build_property.ProjectDir = C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\
 >>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5

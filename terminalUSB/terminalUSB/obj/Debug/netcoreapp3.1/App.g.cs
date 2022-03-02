@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿#pragma checksum "..\..\..\App.xaml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "F71C0B1F1CE0FA07B2762B034DEA0E95D3B34FAD"
+=======
+﻿#pragma checksum "..\..\..\App.xaml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "CF434C4C5AF0E7E6072CA0A07F6F8CDED430BF25"
+>>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
 =======
 ﻿#pragma checksum "..\..\..\App.xaml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "CF434C4C5AF0E7E6072CA0A07F6F8CDED430BF25"
 >>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
@@ -54,7 +58,11 @@ namespace terminalUSB {
             
             #line 5 "..\..\..\App.xaml"
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.StartupUri = new System.Uri("Views/Windows/MainWindow.xaml", System.UriKind.Relative);
+=======
+            this.StartupUri = new System.Uri("MainWindow.xaml", System.UriKind.Relative);
+>>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
 =======
             this.StartupUri = new System.Uri("MainWindow.xaml", System.UriKind.Relative);
 >>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5

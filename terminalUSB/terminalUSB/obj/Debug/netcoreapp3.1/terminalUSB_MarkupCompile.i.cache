@@ -5,7 +5,11 @@ winexe
 C#
 .cs
 <<<<<<< HEAD
+<<<<<<< HEAD
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\
+=======
+C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\
+>>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
 =======
 C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\
 >>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
@@ -13,6 +17,7 @@ terminalUSB
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+<<<<<<< HEAD
 <<<<<<< HEAD
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\App.xaml
 1-1183730635
@@ -23,6 +28,8 @@ Views\windows\MainWindow.xaml;
 
 True
 =======
+=======
+>>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
 C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\App.xaml
 11407045341
 
@@ -31,5 +38,8 @@ C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\App.xaml
 MainWindow.xaml;
 
 False
+<<<<<<< HEAD
+>>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
+=======
 >>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
 

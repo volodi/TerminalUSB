@@ -14,17 +14,23 @@
     "version": "1.0.0",
     "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "projectUniqueName": "B:\\TerminalUSB\\TerminalUSB\\terminalUSB\\terminalUSB\\terminalUSB.csproj",
       "projectName": "terminalUSB",
       "projectPath": "B:\\TerminalUSB\\TerminalUSB\\terminalUSB\\terminalUSB\\terminalUSB.csproj",
       "packagesPath": "C:\\Users\\Volodia\\.nuget\\packages\\",
       "outputPath": "B:\\TerminalUSB\\TerminalUSB\\terminalUSB\\terminalUSB\\obj\\",
 =======
+=======
+>>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
       "projectUniqueName": "C:\\Users\\Volodia\\source\\repos\\terminalUSB\\terminalUSB\\terminalUSB.csproj",
       "projectName": "terminalUSB",
       "projectPath": "C:\\Users\\Volodia\\source\\repos\\terminalUSB\\terminalUSB\\terminalUSB.csproj",
       "packagesPath": "C:\\Users\\Volodia\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Volodia\\source\\repos\\terminalUSB\\terminalUSB\\obj\\",
+<<<<<<< HEAD
+>>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
+=======
 >>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
       "projectStyle": "PackageReference",
       "configFilePaths": [

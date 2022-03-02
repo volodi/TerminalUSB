@@ -54,7 +54,11 @@ namespace terminalUSB {
             }
             _contentLoaded = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
             System.Uri resourceLocater = new System.Uri("/terminalUSB;V1.0.0.0;component/mainwindow.xaml", System.UriKind.Relative);
+=======
+            System.Uri resourceLocater = new System.Uri("/terminalUSB;component/mainwindow.xaml", System.UriKind.Relative);
+>>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
 =======
             System.Uri resourceLocater = new System.Uri("/terminalUSB;component/mainwindow.xaml", System.UriKind.Relative);
 >>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
