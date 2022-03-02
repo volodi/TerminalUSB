@@ -4,7 +4,6 @@ B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\bin\Debug\netcoreapp3.1\termi
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\bin\Debug\netcoreapp3.1\terminalUSB.runtimeconfig.dev.json
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\bin\Debug\netcoreapp3.1\terminalUSB.dll
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\bin\Debug\netcoreapp3.1\terminalUSB.pdb
-B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.csproj.AssemblyReference.cache
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\Views\windows\MainWindow.g.cs
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\App.g.cs
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
