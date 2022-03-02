@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vm ="clr-namespace:terminalUSB.ViewModels"
+        xmlns:fa5="http://schemas.fontawesome.com/icons/"
         xmlns:cmd ="clr-namespace:terminalUSB.Infafstructure.Commands"
         xmlns:local="clr-namespace:terminalUSB"
         Title="{Binding Title}"
@@ -31,7 +32,13 @@
             </StatusBarItem>
         </StatusBar>
         <TabControl>
-            <TabItem Header="Термвнал">
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <fa5:ImageAwesome Icon="Solid_Terminal" Height="13" Foreground="#ff2620"></fa5:ImageAwesome>
+                        <TextBlock Text="Термінал" ></TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="25*"/>
