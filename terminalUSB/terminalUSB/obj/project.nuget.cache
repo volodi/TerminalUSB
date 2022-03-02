@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "VmxMfW2k/1LcUVihsbdjX0+7VaAZ+Rp7Wp1kktYUXlzu6JuHpmyTeEB3xU0wlCTml4b+Qb0ygrDV9KYzq+HI0A==",
   "success": true,
   "projectFilePath": "B:\\TerminalUSB\\TerminalUSB\\terminalUSB\\terminalUSB\\terminalUSB.csproj",
+=======
+  "dgSpecHash": "jmeQa2vnvm9lPR+1eaoCJnA6cyhWbIVOb9kNTZe+rPpnVkreTqDdF67jhFVI07fw3XKFU5ldjsk6T5IxtgL30w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Volodia\\source\\repos\\terminalUSB\\terminalUSB\\terminalUSB.csproj",
+>>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
   "expectedPackageFiles": [],
   "logs": []
 }

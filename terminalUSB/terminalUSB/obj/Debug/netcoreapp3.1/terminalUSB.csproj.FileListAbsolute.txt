@@ -18,6 +18,7 @@ C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\te
 C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.dll
 C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.pdb
 C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.genruntimeconfig.cache
+<<<<<<< HEAD
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\bin\Debug\netcoreapp3.1\terminalUSB.exe
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\bin\Debug\netcoreapp3.1\terminalUSB.deps.json
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\bin\Debug\netcoreapp3.1\terminalUSB.runtimeconfig.json
@@ -39,3 +40,5 @@ B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\termi
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.pdb
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.genruntimeconfig.cache
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+=======
+>>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
