@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows;
+using System.Windows.Input;
+using terminalUSB.Infafstructure.Commands;
 using terminalUSB.ViewModels.Base;
 
 namespace terminalUSB.ViewModels
@@ -30,6 +33,21 @@ namespace terminalUSB.ViewModels
 
         #endregion
 
+        #region ClaseApplicationCommand 
 
+        public ICommand ClaseApplicationCommand { get; }
+
+        private bool CanClaseApplicationCommand(object p) => true;
+        private void OnClaseApplicationCommand(object p)
+        {
+            Application.Current.Shutdown();
+        }
+
+        #endregion
+
+        public MainWindowViewModel()
+        {
+            ClaseApplicationCommand = new LambdaCommand(OnClaseApplicationCommand, CanClaseApplicationCommand);
+        }
     }
 }

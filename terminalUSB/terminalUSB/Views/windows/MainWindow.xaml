@@ -13,7 +13,7 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Меню">
-                <MenuItem Header="Вихід"/>
+                <MenuItem Header="Вихід" Command="{Binding ClaseApplicationCommand}"/>
             </MenuItem>
             <MenuItem Header="Про програму">
             </MenuItem>
