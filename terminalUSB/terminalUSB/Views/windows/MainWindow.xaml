@@ -40,7 +40,7 @@
                         <RowDefinition Height="5*"/>
                     </Grid.RowDefinitions>
 
-                    <Button Content="Connect" Grid.Column="1" Grid.Row="0" Margin="10"></Button>
+                    <Button Content="{Binding StatusConnect}" Grid.Column="1" Grid.Row="0" Margin="10"></Button>
                     <Border Margin="2" BorderThickness="1" BorderBrush="Black" Grid.Column="1" Grid.Row="1">
                         <TextBlock  OpacityMask="Black"/>
                     </Border>

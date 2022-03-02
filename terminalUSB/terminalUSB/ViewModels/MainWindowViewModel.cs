@@ -15,5 +15,21 @@ namespace terminalUSB.ViewModels
             set => Set(ref _Title, value);
         }
 
+
+        #region Status
+
+        /// <summary>статутс підключення</summary>
+        private string _StatusConnect = "Connect";
+
+        /// <summary>статутс підключення</summary>
+        public string StatusConnect
+        {
+            get => _StatusConnect;
+            set => Set(ref _StatusConnect, value);
+        }
+
+        #endregion
+
+
     }
 }
