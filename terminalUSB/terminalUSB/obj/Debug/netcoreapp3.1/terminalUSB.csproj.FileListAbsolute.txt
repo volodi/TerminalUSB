@@ -1,24 +1,3 @@
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\bin\Debug\netcoreapp3.1\terminalUSB.exe
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\bin\Debug\netcoreapp3.1\terminalUSB.deps.json
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\bin\Debug\netcoreapp3.1\terminalUSB.runtimeconfig.json
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\bin\Debug\netcoreapp3.1\terminalUSB.runtimeconfig.dev.json
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\bin\Debug\netcoreapp3.1\terminalUSB.dll
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\bin\Debug\netcoreapp3.1\terminalUSB.pdb
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.csproj.AssemblyReference.cache
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\MainWindow.g.cs
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\App.g.cs
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB_MarkupCompile.cache
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB_MarkupCompile.lref
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\MainWindow.baml
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.g.resources
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.AssemblyInfoInputs.cache
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.AssemblyInfo.cs
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.csproj.CoreCompileInputs.cache
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.dll
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.pdb
-C:\Users\Volodia\source\repos\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.genruntimeconfig.cache
-<<<<<<< HEAD
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\bin\Debug\netcoreapp3.1\terminalUSB.exe
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\bin\Debug\netcoreapp3.1\terminalUSB.deps.json
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\bin\Debug\netcoreapp3.1\terminalUSB.runtimeconfig.json
@@ -28,6 +7,7 @@ B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\bin\Debug\netcoreapp3.1\termi
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.csproj.AssemblyReference.cache
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\Views\windows\MainWindow.g.cs
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\App.g.cs
+B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB_MarkupCompile.cache
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB_MarkupCompile.lref
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\Views\windows\MainWindow.baml
@@ -39,7 +19,3 @@ B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\termi
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.dll
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.pdb
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\terminalUSB.genruntimeconfig.cache
-B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
-=======
->>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
-B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\MainWindow.g.cs
