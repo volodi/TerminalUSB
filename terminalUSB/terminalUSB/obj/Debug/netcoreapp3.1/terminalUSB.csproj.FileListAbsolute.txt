@@ -42,3 +42,4 @@ B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\termi
 B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
 =======
 >>>>>>> ffa103dcb7a2792b47ba5cb4152f7ed0b41236f5
+B:\TerminalUSB\TerminalUSB\terminalUSB\terminalUSB\obj\Debug\netcoreapp3.1\MainWindow.g.cs
