@@ -20,7 +20,7 @@
         </Menu>
         <StatusBar DockPanel.Dock="Bottom">
             <StatusBarItem>
-                <TextBlock MaxWidth="120" Text="1234"/>
+                <TextBlock MaxWidth="120" MinWidth="100" Text="1234"/>
             </StatusBarItem>
             <StatusBarItem>
                 <ProgressBar Height="14" Width="200" Value="30"/>

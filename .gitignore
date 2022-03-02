@@ -1,3 +1,5 @@
 *.pdb
 *.exe
 *.dll
+.vs/*
+termialUSB/odj/*
