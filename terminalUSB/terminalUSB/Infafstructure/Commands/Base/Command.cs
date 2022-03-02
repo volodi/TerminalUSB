@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 namespace terminalUSB.Infafstructure.Commands.Base
 {
-    internal abstract class Commands : ICommand
+    internal abstract class Command : ICommand
 
     {
         public event EventHandler CanExecuteChanged
