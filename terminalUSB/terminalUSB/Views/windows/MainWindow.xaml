@@ -58,7 +58,10 @@
                 </Grid>
 
             </TabItem>
-            <TabItem Header="Графік"></TabItem>
+            <TabItem Header="Графік">
+                
+                
+            </TabItem>
         </TabControl>
     </DockPanel>
     
