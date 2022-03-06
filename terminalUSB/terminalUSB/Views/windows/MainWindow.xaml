@@ -6,6 +6,7 @@
         xmlns:vm ="clr-namespace:terminalUSB.ViewModels"
         xmlns:fa5="http://schemas.fontawesome.com/icons/"
         xmlns:cmd ="clr-namespace:terminalUSB.Infafstructure.Commands"
+        xmlns:Converters="clr-namespace:AdvSerialCommunicator.Converters" 
         xmlns:local="clr-namespace:terminalUSB"
         Title="{Binding Title}"
         Height="450" Width="800">
@@ -14,6 +15,7 @@
     </Window.DataContext>
     <Window.Resources>
         <cmd:CloseApplicationCommand x:Key="CloseApplicationCommand"/>
+        <Converters:BoolToIsConnectedConverter x:Key="BoolToIsConnectedConverter"/>
     </Window.Resources>
     <DockPanel>
         <Menu DockPanel.Dock="Top">
@@ -61,6 +63,44 @@
             <TabItem Header="Графік">
                 
                 
+            </TabItem>
+            <TabItem Header="Графік 2">
+                <Grid Margin="5">
+                    <Grid HorizontalAlignment="Left" Width="300">
+                        <TextBlock Text="Connected to: " VerticalAlignment="Top" HorizontalAlignment="Left" Padding="5"/>
+                        <TextBlock Text="{Binding SerialPort.ConnectedPort, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="5" Margin="88,0,0,0"/>
+                        <ListBox ItemsSource="{Binding SerialPort.Settings.AvaliablePorts, Mode=OneTime}" 
+                     SelectedItem="{Binding SerialPort.Settings.SelectedCOMPort, UpdateSourceTrigger=PropertyChanged}"
+                     Margin="0,31,0,90"/>
+                        <Button Command="{Binding SerialPort.Settings.RefreshPortsCommand, Mode=OneTime}" VerticalAlignment="Bottom" Height="30" Content="Refresh List" Margin="0,0,0,55"/>
+                        <Button Command="{Binding SerialPort.AutoConnectDisconnectCommand, Mode=OneTime}" VerticalAlignment="Bottom" Height="50" Content="{Binding SerialPort.IsConnected, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource BoolToIsConnectedConverter}}"/>
+                    </Grid>
+                    <Grid Margin="305 0 0 0">
+                        <GroupBox Header="Messages" Margin="0,0,0,45">
+                            <Grid>
+                                <Grid VerticalAlignment="Top" Height="30">
+                                    <Button Command="{Binding Messages.ClearMessagesCommand, Mode=OneTime}" Content="Clear Messages" HorizontalAlignment="Left" Width="100" BorderThickness="1 1 1 0"/>
+                                    <TextBlock Text="Total Messages: " HorizontalAlignment="Left" Padding="5" Margin="105,0,0,0" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Messages.MessagesCount, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Padding="5" Margin="201,0,0,0" VerticalAlignment="Center"/>
+                                </Grid>
+
+                                <TextBox Text="{Binding Messages.MessagesText, UpdateSourceTrigger=PropertyChanged}"
+                             FontSize="12"
+                             IsReadOnly="True"
+                             Margin="0,30,0,0"/>
+                            </Grid>
+                        </GroupBox>
+                        <Grid VerticalAlignment="Bottom" Height="40">
+                            <Button Command="{Binding Messages.SendMessageCommand, Mode=OneTime}" HorizontalAlignment="Left" Width="80" Content="Send"/>
+                            <TextBox Text="{Binding Messages.ToBeSentText, UpdateSourceTrigger=PropertyChanged}" VerticalContentAlignment="Center" Margin="85,0,0,0" Padding="5 3 3 3">
+                                <TextBox.InputBindings>
+                                    <KeyBinding Key="Enter" Command="{Binding Messages.SendMessageCommand, Mode=OneTime}"/>
+                                </TextBox.InputBindings>
+                            </TextBox>
+                        </Grid>
+                    </Grid>
+                </Grid>
+
             </TabItem>
         </TabControl>
     </DockPanel>

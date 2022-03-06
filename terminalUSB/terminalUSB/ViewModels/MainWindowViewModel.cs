@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AdvSerialCommunicator.Messaging;
+using AdvSerialCommunicator.Serial;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -58,8 +60,36 @@ namespace terminalUSB.ViewModels
 
         #endregion
 
+
+        public MessagesViewModel Messages { get; set; }
+
+        public MessageReceiver Receiver { get; set; }
+
+        public MessageSender Sender { get; set; }
+
+        public SerialPortViewModel SerialPort { get; set; }
+
+
         public MainWindowViewModel()
         {
+
+            SerialPort = new SerialPortViewModel();
+            Receiver = new MessageReceiver();
+            Sender = new MessageSender();
+            Messages = new MessagesViewModel();
+
+            // hmm
+            Receiver.Messages = Messages;
+            Messages.Sender = Sender;
+            Sender.Messages = Messages;
+
+            SerialPort.Receiver = Receiver;
+            SerialPort.Sender = Sender;
+            SerialPort.Messages = Messages;
+
+            Receiver.Port = SerialPort.Port;
+            Sender.Port = SerialPort.Port;
+
             #region Command
             ClaseApplicationCommand = new LambdaCommand(OnClaseApplicationCommand, CanClaseApplicationCommand);
             #endregion
