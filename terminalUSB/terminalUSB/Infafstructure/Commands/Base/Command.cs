@@ -6,6 +6,7 @@ namespace terminalUSB.Infafstructure.Commands.Base
     internal abstract class Command : ICommand
 
     {
+        
         public event EventHandler CanExecuteChanged
         {
             add => CommandManager.RequerySuggested += value;

@@ -1,15 +1,17 @@
 ﻿using AdvSerialCommunicator.Messaging;
+using AdvSerialCommunicator.Serial;
 using System;
 using System.Collections.Generic;
 using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using terminalUSB.Models.Serial;
 using TheRFramework.Utilities;
 
-namespace AdvSerialCommunicator.Serial
+namespace terminalUSB.ViewModels.Serial
 {
-    public class SerialPortViewModel : BaseViewModel
+    internal class SerialPortViewModel : BaseViewModel
     {
         // will be used to bind to the currently connected port
         private string _connectedPort;
@@ -39,7 +41,9 @@ namespace AdvSerialCommunicator.Serial
         // NOt really that useful, but can be used to clear the serialport's receive/send buffers, but they probably wont fill up unless you send a giant message and noone responds... sort of
         public Command ClearBuffersCommand { get; }
 
-        public PortSettingsViewModel Settings { get; set; }
+        public SerialPortSetting Settings { get; set; }
+        //public PortSettingsViewModel Settings { get; set; }
+        
 
         public MessagesViewModel Messages { get; set; }
 
@@ -52,8 +56,8 @@ namespace AdvSerialCommunicator.Serial
             Port = new SerialPort();
             Port.ReadTimeout = 1000;
             Port.WriteTimeout = 1000;
-            Settings = new PortSettingsViewModel();
-
+            Settings = new SerialPortSetting();
+            //Settings = new PortSettingsViewModel();
             AutoConnectDisconnectCommand = new Command(AutoConnectDisconnect);
             ClearBuffersCommand = new Command(ClearBuffers);
         }

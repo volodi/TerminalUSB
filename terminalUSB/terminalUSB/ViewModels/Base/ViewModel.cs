@@ -14,6 +14,12 @@ namespace terminalUSB.ViewModels.Base
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(PropertyName));
         }
+        /*new хз*/
+        public virtual void RaisePropertyChanged<T>(ref T property, T newValue, [CallerMemberName] string propertyName = "")
+        {
+            property = newValue;
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
 
         protected virtual bool Set<T>(ref T field, T value, [CallerMemberName] string PropertyName = null)
         {

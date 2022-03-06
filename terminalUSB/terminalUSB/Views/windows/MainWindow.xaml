@@ -45,35 +45,106 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="25*"/>
                         <ColumnDefinition Width="50*"/>
-                        <ColumnDefinition Width="25*"/>
+                        <!--<ColumnDefinition Width="25*"/>-->
                     </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="15*"/>
-                        <RowDefinition Height="80*"/>
-                        <RowDefinition Height="5*"/>
-                    </Grid.RowDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <!--<ColumnDefinition Width="25*"/>-->
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="15*"/>
+                            <RowDefinition Height="15*"/>
+                            <RowDefinition Height="15*"/>
+                            <RowDefinition Height="15*"/>
+                            
+                            <RowDefinition Height="15*"/>
+                            <RowDefinition Height="15*"/>
+                            <RowDefinition Height="15*"/>
+                            <RowDefinition Height="15*" />
+                        </Grid.RowDefinitions>
+                        
+                        <Viewbox Margin="10">
+                            <TextBlock TextWrapping="Wrap" Text="Port" />
+                        </Viewbox>
+                        <ComboBox ItemsSource="{Binding SerialPortSetting.AvaliablePorts, Mode=OneTime}" 
+                        SelectedItem="{Binding SerialPort.Settings.SelectedCOMPort, UpdateSourceTrigger=PropertyChanged}"
+                                  FontSize="{Binding SelectedFont, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="1" Margin="10">
+                        </ComboBox>
 
-                    <Button Content="{Binding StatusConnect}" Grid.Column="1" Grid.Row="0" Margin="10"></Button>
-                    <Border Margin="2" BorderThickness="1" BorderBrush="Black" Grid.Column="1" Grid.Row="1">
-                        <TextBlock  OpacityMask="Black"/>
-                    </Border>
+                        <Viewbox Margin="10" Grid.Row="1" Grid.Column="0">
+                            <TextBlock TextWrapping="Wrap" Text="Boud rate" />
+                        </Viewbox>
+                        <ComboBox ItemsSource="{Binding SerialPortSetting.baudRate, Mode=OneTime}" 
+                        SelectedItem="{Binding SerialPortSetting.serialPortSetting.BaudRate, UpdateSourceTrigger=PropertyChanged}"
+                                  FontSize="{Binding SelectedFont, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Grid.Column="1" Margin="10">
+                        </ComboBox>
+
+                        <Viewbox Margin="10" Grid.Row="2" Grid.Column="0">
+                            <TextBlock TextWrapping="Wrap" Text="Data Bits" />
+                        </Viewbox>
+                        <ComboBox ItemsSource="{Binding SerialPortSetting.AvaliablePorts, Mode=OneTime}" 
+                        SelectedItem="{Binding SerialPort.Settings.SelectedCOMPort, UpdateSourceTrigger=PropertyChanged}"
+                                  FontSize="{Binding SelectedFont, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2" Grid.Column="1" Margin="10">
+                        </ComboBox>
+
+                        <Viewbox Margin="10" Grid.Row="3" Grid.Column="0">
+                            <TextBlock TextWrapping="Wrap" Text="Stop bits" />
+                        </Viewbox>
+                        <ComboBox ItemsSource="{Binding SerialPortSetting.AvaliablePorts, Mode=OneTime}" 
+                        SelectedItem="{Binding SerialPort.Settings.SelectedCOMPort, UpdateSourceTrigger=PropertyChanged}"
+                                  FontSize="{Binding SelectedFont, UpdateSourceTrigger=PropertyChanged}" Grid.Row="3" Grid.Column="1" Margin="10">
+                        </ComboBox>
+
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="15*"/>
+                            <RowDefinition Height="80*"/>
+                            <!--<RowDefinition Height="5*"/>-->
+                        </Grid.RowDefinitions>
+                        <Button Content="{Binding StatusConnect}" Grid.Column="1" Grid.Row="0" Margin="10"></Button>
+                        <Border Margin="2" BorderThickness="1" BorderBrush="Black" Grid.Column="1" Grid.Row="1">
+                            <TextBlock  OpacityMask="Black"/>
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="15*"/>
+                            <RowDefinition Height="80*"/>
+                            <!--<RowDefinition Height="5*"/>-->
+                    </Grid.RowDefinitions>
+                        <Button Content="{Binding StatusConnect}" Grid.Column="1" Grid.Row="0" Margin="10"></Button>
+                        <Border Margin="2" BorderThickness="1" BorderBrush="Black" Grid.Column="1" Grid.Row="1">
+                            <TextBlock  OpacityMask="Black"/>
+                        </Border>
+                    </Grid>
+
+
+
+
                 </Grid>
 
             </TabItem>
             <TabItem Header="Графік">
-                
-                
+
+
             </TabItem>
             <TabItem Header="Графік 2">
                 <Grid Margin="5">
                     <Grid HorizontalAlignment="Left" Width="300">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="28*"/>
+                            <ColumnDefinition Width="47*"/>
+                        </Grid.ColumnDefinitions>
                         <TextBlock Text="Connected to: " VerticalAlignment="Top" HorizontalAlignment="Left" Padding="5"/>
                         <TextBlock Text="{Binding SerialPort.ConnectedPort, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="5" Margin="88,0,0,0"/>
-                        <ListBox ItemsSource="{Binding SerialPort.Settings.AvaliablePorts, Mode=OneTime}" 
+                        <ComboBox ItemsSource="{Binding SerialPort.Settings.AvaliablePorts, Mode=OneTime}" 
                      SelectedItem="{Binding SerialPort.Settings.SelectedCOMPort, UpdateSourceTrigger=PropertyChanged}"
-                     Margin="0,31,0,90"/>
-                        <Button Command="{Binding SerialPort.Settings.RefreshPortsCommand, Mode=OneTime}" VerticalAlignment="Bottom" Height="30" Content="Refresh List" Margin="0,0,0,55"/>
-                        <Button Command="{Binding SerialPort.AutoConnectDisconnectCommand, Mode=OneTime}" VerticalAlignment="Bottom" Height="50" Content="{Binding SerialPort.IsConnected, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource BoolToIsConnectedConverter}}"/>
+                      Grid.ColumnSpan="2"/>
+                        <Button Command="{Binding SerialPort.Settings.RefreshPortsCommand, Mode=OneTime}" VerticalAlignment="Bottom" Height="30" Content="Refresh List" Margin="0,0,0,55" Grid.ColumnSpan="2"/>
+                        <Button Command="{Binding SerialPort.AutoConnectDisconnectCommand, Mode=OneTime}" VerticalAlignment="Bottom" Height="50" Content="{Binding SerialPort.IsConnected, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource BoolToIsConnectedConverter}}" Grid.ColumnSpan="2"/>
                     </Grid>
                     <Grid Margin="305 0 0 0">
                         <GroupBox Header="Messages" Margin="0,0,0,45">
@@ -104,7 +175,7 @@
             </TabItem>
         </TabControl>
     </DockPanel>
-    
-    
+
+
     <!---->
 </Window>

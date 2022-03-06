@@ -8,6 +8,7 @@ using System.Windows.Input;
 using terminalUSB.Infafstructure.Commands;
 using terminalUSB.Models;
 using terminalUSB.ViewModels.Base;
+using terminalUSB.ViewModels.Serial;
 
 namespace terminalUSB.ViewModels
 {
@@ -69,10 +70,12 @@ namespace terminalUSB.ViewModels
 
         public SerialPortViewModel SerialPort { get; set; }
 
+        public SerialPortSettingVM SerialPortSetting { get; set; }
+
 
         public MainWindowViewModel()
         {
-
+            SerialPortSetting = new SerialPortSettingVM();
             SerialPort = new SerialPortViewModel();
             Receiver = new MessageReceiver();
             Sender = new MessageSender();
